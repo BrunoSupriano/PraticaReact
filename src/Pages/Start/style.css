@@ -3,11 +3,54 @@ html {
   font-size: 16px;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body {
+  background-color: rgb(0, 6, 64);
+  color: white;
+  font-family: Arial;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 30px;
   padding: 0;
   font-weight: normal;
   text-align: center; 
-  align-items: center;
+  vertical-align: top;
 }
 
+button{
+
+  color: white;
+  background-color:rgb(0, 6, 64);
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 50px; 
+  border: 2px;
+  border-style: solid;
+  border-color: rgb(0, 47, 255);
+  margin: 2px;
+}
+
+button:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+input {
+  text-align: center; 
+  border: transparent;
+  font-size: 20px;
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 100px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgb(0, 47, 255);
+}

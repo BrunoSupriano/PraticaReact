@@ -14,15 +14,20 @@ const Lobby = ({ onProceed }) => {
 
     return (
         <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></link>
             <h1>Bem-Vindo</h1>
-            <p>Insira seu nome abaixo:</p>
             <input
                 type="text"
                 placeholder="Insira seu nome"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                        handleProceed();
+                    }
+                }}
             />
-            <button onClick={handleProceed}>Proseguir</button>
+            <button onClick={handleProceed}><i class="fa-solid fa-check"></i></button>
         </div>
     );
 };
