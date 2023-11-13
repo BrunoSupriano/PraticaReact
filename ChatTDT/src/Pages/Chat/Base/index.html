@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat 2.0</title>
+    <link rel="icon" href="icons8-chat-100.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h2>Atendimento on-line
+      </h2>
+      <div id="chat-screen">
+        <div class="messages-list" id="messages-list">
+          <div class="message-item">
+            <div class="msg-user"><strong>Atendente diz:</strong></div>
+            <div class="msg-chat">Olá Sr. Bruno</div>
+          </div>
+          <div class="message-item">
+            <div class="msg-user"><strong>Atendente diz:</strong></div>
+            <div class="msg-chat">Tudo bem?</div>
+          </div>
+          <div class="message-item message-user">
+            <div class="msg-user"><strong>Você diz:</strong></div>
+            <div class="msg-chat">Olá</div>
+          </div>
+          <div class="message-item message-user">
+            <div class="msg-user"><strong>Você diz:</strong></div>
+            <div class="msg-chat">Tudo perfeito!</div>
+          </div>
+        </div>
+        <form id="form-chat-send" action="index.html" method="post">
+          <input type="text" id="mensagem" name="message" placeholder="Digite sua mensagem..." />
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </header>
+    </div>
+    <script src="code.js"></script>
+    </script>    
+  </body>
+</html>
