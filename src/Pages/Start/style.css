@@ -4,12 +4,13 @@ html {
 }
 
 body {
+  display: flex;
   background-color: rgb(0, 6, 64);
   color: white;
   font-family: Arial;
   font-size: 30px;
-  display: flex;
   align-items: center;
+  vertical-align: middle;
   justify-content: center;
   height: 100vh;
   margin: 0;
@@ -17,24 +18,25 @@ body {
 }
 
 h1 {
+  font-size: 50px;
   margin: 30px;
   padding: 0;
   font-weight: normal;
-  text-align: center; 
-  vertical-align: top;
+  text-align: center;
 }
 
-button{
-
-  color: white;
-  background-color:rgb(0, 6, 64);
+button {
+  color: rgb(0, 47, 255);
+  background-color: white;
   font-size: 20px;
   padding: 12px;
-  border-radius: 50px; 
+  border-radius: 50px;
   border: 2px;
   border-style: solid;
   border-color: rgb(0, 47, 255);
-  margin: 2px;
+  margin-left: 5px;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
 button:focus {
@@ -44,13 +46,30 @@ button:focus {
 
 
 input {
-  text-align: center; 
   border: transparent;
+  border-radius: 100px;
   font-size: 20px;
   padding: 12px;
-  margin-right: 10px;
-  border-radius: 100px;
   border: 2px;
   border-style: solid;
   border-color: rgb(0, 47, 255);
+  transition: border-color 0.3s, color 0.3s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+input.shake {
+  animation: shake 0.5s;
+  border-color: red;
+  color: red;
 }

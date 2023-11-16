@@ -3,7 +3,7 @@ import './style.css';
 
 function App() {
     const [messages, setMessages] = useState([
-        { user: 'Atendente', text: 'Olá Sr. Bruno' },
+        { user: 'Atendente', text: 'Olá Sr(a) Fulano(a)' },
         { user: 'Atendente', text: 'Tudo bem?' },
     ]);
 
