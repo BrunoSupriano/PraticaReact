@@ -1,8 +1,14 @@
-# React + Vite
+# Chat em React Com troca de telas simples
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto representa a atividade proposta pelo professor Lucas na disciplina de Front-End;
 
-Currently, two official plugins are available:
+### Integrantes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Julia Meller Mendes Silva
+- Bruno de Moraes Supriano
+
+### Tecnologias:
+
+1. [React](https://pt-br.reactjs.org/)
+2. [React Router](https://reactrouter.com/)
+3. [Vite](https://vitejs.dev/)
